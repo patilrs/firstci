@@ -1,9 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('scm') {
+    stage('git connect') {
       steps {
-        sleep 2
+        sh '''#!/bin/bash
+ls -ltr
+'''
       }
     }
 
